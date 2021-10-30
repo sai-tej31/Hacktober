@@ -58,9 +58,10 @@ class DoublyLinkedList:
             self.head.prev = node
             self.head = node
 
-    def insert_at_end(self, data):
+    def insert_at_last_print(self, data):
         if self.head is None:
             self.head = Node(data, None, None)
+            print(data)
             return
 
         itr = self.head
