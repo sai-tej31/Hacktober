@@ -138,8 +138,9 @@ def dealer_busts(player,dealer,chips):
 def dealer_wins(player,dealer,chips):
     print("Dealer wins!")
     chips.lose_bet()
-    
-def push(player,dealer):
+ 
+
+def push_tie(player,dealer):
     print("Dealer and Player tie! It's a push.")
     
     
@@ -219,4 +220,10 @@ while True:
         continue
     else:
         print("Thanks for playing!")
+        x = input("Do you want to continue")
+        if x == "yes":
+         continue
+        else:
+         pass
+         
         break
