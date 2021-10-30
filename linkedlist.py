@@ -91,6 +91,9 @@ class LinkedList:
                 break
             itr = itr.next
         return
+    def print_name(self,name):
+        print(name)
+        
 
 if __name__ == '__main__':
     ll = LinkedList()
